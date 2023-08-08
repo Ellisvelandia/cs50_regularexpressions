@@ -13,10 +13,14 @@ email = input("whats your email? ").strip()
 # else:
 #   print("Invalid")    
 
-if re.search(r"^\w+@\w+\.(com|edu|net|org)$", email, re.IGNORECASE ):
+# if re.search(r"^\w+@\w+\.(com|edu|net|org)$", email, re.IGNORECASE ):
+if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE ):
     print("Valid")
 else:
   print("Invalid")    
 
-
 #  \d decimal digit 
+#  .  
+#  *  
+#  +  
+#  ?  
