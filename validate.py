@@ -14,6 +14,7 @@ email = input("whats your email? ").strip()
 #   print("Invalid")    
 
 # if re.search(r"^\w+@\w+\.(com|edu|net|org)$", email, re.IGNORECASE ):
+# if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE ):
 if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE ):
     print("Valid")
 else:
